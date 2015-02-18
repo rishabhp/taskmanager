@@ -1,0 +1,171 @@
+* {
+  margin: 0; padding: 0;
+  font-family: Verdana;
+}
+
+body {
+  font-size: 76%;
+  padding-bottom: 35px; /* For sticky footer */
+}
+
+/* Header */
+
+header {
+  background: #026AA7;
+  padding: 20px;
+}
+
+header h1 {
+  color: #f4f4f4;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  padding: 10px 20px;
+  background: #0E74Af;
+  height: 15px;
+}
+
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  text-decoration: none;
+}
+
+/* Generics */
+
+#full_shadow {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 5;
+  display: none;
+}
+
+/* Content */
+
+#content {
+  padding: 20px;
+  overflow: auto;
+}
+
+#content h1 {
+  margin-bottom: 20px;
+}
+
+.create_form {
+  margin-bottom: 20px;
+}
+.create_form input {
+  padding: 5px;
+}
+
+/* Boards */
+
+#board_list {
+  list-style: decimal;
+  padding-left: 20px;
+}
+#board_list li {
+  padding: 5px 0;
+}
+#board_list a {
+  text-decoration: none;
+}
+
+#board_list .edit_board {
+  margin-left: 10px;
+}
+
+/* Task lists */
+
+#task_lists #delete_board_btn,
+#task_lists #delete_task_list_btn,
+#task_lists #delete_task_btn {
+  margin-left: 10px;
+  color: red;
+}
+
+#task_list_group {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 1000px;
+}
+
+.task_list_panel {
+  float: left;
+  display: inline-block;
+  margin-right: 20px;
+  background: #e2e4e6;
+  padding: 10px;
+  border-radius: 5px;
+  width: 250px;
+  overflow: auto;
+  position: relative;
+  padding-bottom: 40px;
+}
+.task_list_panel .task_list_name {
+  margin-bottom: 10px;
+}
+.task_list_panel ul {
+  list-style: none;
+  height: 300px;
+  overflow: auto;
+}
+.task_list_panel ul li {
+  background: #fff;
+  padding: 8px;
+  margin-bottom: 8px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.task_list_panel .add_task_section {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 10px;
+}
+.add_task_section .add_task_form {
+  display: none;
+}
+.add_task_section input {
+  padding: 2px;
+}
+.add_task_section .add_task_btn {
+  text-decoration: none;
+}
+
+.task_list_panel .edit_task {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding: 5px;
+  display: none;
+  background: #E2E4E6;
+}
+.task_list_panel ul li:hover .edit_task {
+  display: inline-block;
+}
+
+/* Popups */
+
+.popup {
+  display: none;
+  width: 300px;
+  background: #edeff0;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  padding: 10px;
+}
+
+.popup h2 {
+  margin-bottom: 15px;
+}
