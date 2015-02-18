@@ -1,0 +1,1 @@
+Super simple client-side (JS based) task manager that uses localStorage. It has the concept of boards and tasks (task lists) like Trello.
